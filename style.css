@@ -1,0 +1,145 @@
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --fw-light: 500;
+    --fw-regular: 700;
+    --fw-bold: 900;
+  }
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  body{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1rem;
+    font-weight: var(--fw-light);
+    color: var(--desaturated-blue);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: var(--pale-blue);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  main{
+    max-width: 375px;
+    margin: 1rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 1px 8px 24px 4px rgba(66, 68, 90, 0.3);
+  }
+
+  .card__body{
+    padding: 1.5rem;
+  }
+
+  .card__title, .plan__title{
+    color: var(--dark-blue);
+    font-weight: var(--fw-bold);
+  }
+
+  .card__title{
+    font-size: 1.5rem;
+    margin-bottom: 0.8em;
+  }
+
+  .flex-container{
+    background-color: var(--very-pale-blue);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.4em;
+    align-items: center;
+    padding: 1.2em 0.7em;
+    margin: 1.5em 0;
+  }
+  .plan{
+    margin-right: auto;
+  }
+
+  .plan__title,
+  .plan__price,
+  .link-change{
+    font-size: 0.9rem;
+  }
+
+  .link-change{
+    font-weight: var(--fw-bold);
+    color: var(--bright-blue);
+  }
+
+  .btn{
+    display: block;
+    margin: 0 auto 1.5em;
+    padding: 0.85em;
+    border-radius: 15px;
+    border: none;
+    width: 100%;
+    background-color: var(--bright-blue);
+    color: white;
+    font-weight: var(--fw-regular);
+    box-shadow: 0 15px 20px rgba(171, 168, 171, 0.5);  
+  }
+
+  .link-cancel{
+    text-decoration: none;
+    font-weight: var(--fw-regular);
+    color: var(--desaturated-blue)
+  }
+
+  .link-change:is(:hover, :focus){
+    text-decoration: none;
+    opacity: 0.7;
+  }
+
+  .btn:is(:hover, :focus){
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  .link-cancel:is(:hover, :focus){
+    color: var(--dark-blue);
+  }
+
+  @media (min-width: 450px){
+    .card__body{
+        padding: 2.5rem;
+    }
+  }
+
+
+
+
+  
+  
+
